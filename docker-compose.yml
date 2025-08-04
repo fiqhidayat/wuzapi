@@ -15,6 +15,7 @@ services:
             - TZ=${TZ:-Asia/Jakarta}
             - WEBHOOK_FORMAT=${WEBHOOK_FORMAT:-json}
             - SESSION_DEVICE_NAME=${SESSION_DEVICE_NAME:-WuzAPI}
+            - WUZAPI_GLOBAL_WEBHOOK=${WUZAPI_GLOBAL_WEBHOOK:-false}
         depends_on:
             db:
                 condition: service_healthy
